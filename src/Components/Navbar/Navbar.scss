@@ -1,0 +1,151 @@
+@import "../../App.scss";
+
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0.1px;
+    z-index: 999;
+    .wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 1rem 4%;
+        position: sticky;
+        background: $__body_color;
+        .left {
+            display: flex;
+            gap: 1rem;
+            width: 350px;
+        }
+        .right {
+            display: flex;
+            justify-content: end;
+            gap: 1rem;
+            align-items: center;
+            width: 350px;
+            float: right;
+            .icons {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 1rem;
+                cursor: pointer;
+                position: relative;
+                .cartIcon {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    span {
+                        font-size: 12px;
+                        width: 20px;
+                        height: 20px;
+                        border-radius: 50%;
+                        top: -10px;
+                        right: -10px;
+                        background-color: $__girls_color_varient;
+                        position: absolute;
+                        color: $__container_color;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+            }
+        }
+
+        .menu {
+            display: none;
+            font-size: 1.5em;
+        }
+        .close {
+            display: none;
+        }
+        .center {
+            img {
+                max-width: 100px;
+            }
+        }
+    }
+    .items {
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+        padding: .5rem;
+        background: $__text_color;
+        width: 100%;
+        * {
+            color: $__container_color;
+        }
+    }
+}
+
+@media screen and (max-width: 930px) {
+    .navbar {
+        .wrapper {
+            display: flex;
+            justify-content: none;
+            .left {
+                display: block;
+                position: absolute;
+                z-index: 999;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                background-color: $__body_color;
+                width: 50%;
+                min-width: 300px;
+                height: 100dvh;
+                top: 0;
+                border-radius: 0 10px 10px 10px;
+                left: 0;
+                //right: 50%;
+                //transform: translateX(-50%);
+                padding: 2rem;
+                display: flex;
+                flex-direction: column;
+                transition: 1s;
+                transform: translateX(-100vh);
+                gap: 1rem;
+                .l_item {
+                    border-bottom: 1px solid black;
+                }
+            }
+            .responsive_nav {
+                transform: none;
+            }
+            .right {
+                width: fit-content;
+                .icons {
+                    .search, .user {
+                        display: none;
+                    }
+                }
+            }
+            .menu {
+                display: block;
+            }
+            .right_menu {
+                display: flex;
+                flex-direction: row;
+                gap: 1.5rem;
+                align-items: center;
+                justify-content: center;
+                .toggle {
+                    display: block;
+                    background: $__boys_color;
+                    font-size: 2em;
+                    border-radius: 5px;
+                    * {
+                        color: $__container_color;
+    
+                    }
+                }
+            }
+        }
+    }
+}

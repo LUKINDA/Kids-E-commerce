@@ -1,0 +1,148 @@
+@import "../../App.scss";
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    .top {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        height: 13rem;
+        background: $__girls_color_varient;
+        * {
+            color: $__container_color;
+        }
+        h1 {
+            margin-top: 2rem;
+            text-transform: uppercase;
+        }
+        span {
+            color: rgba(255, 255, 255, 0.506);
+        }
+    }
+
+    .middle {
+        text-align: center;
+        margin-block: 2rem;
+        padding-inline: 4%;
+        p {
+            max-width: 750px;
+            margin-top: 1rem !important;
+            margin: auto;
+            font-size: 1.2em;
+            opacity: .7;
+            line-height: 1.5em;
+        }
+    }
+
+    .bottom {
+        display: flex;
+        margin-inline: 8%;
+        gap: 2rem;
+
+        flex-wrap: wrap;
+        
+        .left {
+            flex: 1;
+            width: 100%;
+            
+            height: 100%;
+            
+            h3 {
+                margin-bottom: 1rem;
+            }
+            form {
+                margin-top: 1rem;
+                display: flex;
+                flex-direction: column;
+                background: $__container_color;
+                gap: 1rem;
+                padding: 1rem;
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                height: 100%;
+                border-radius: 20px;
+                .input_field {
+                    display: flex;
+                    flex-direction: column;
+                    
+                    input, textarea {
+                        padding: .5rem 1rem;
+                        //border-radius: 20px;
+                        border: none;
+                        background: rgb(231, 231, 231);
+                        resize: none;
+                        border-radius: 10px;
+                        
+
+                    }
+                }
+                .submit {
+                    width: 100%;
+                    float: right;
+                    display: flex;
+                    margin-block: 1rem;
+                    button {
+                        float: right;
+                        margin: 0 0 0 auto;
+                        padding: .5rem 1rem;
+                        border: none;
+                        border-radius: 10px;
+                        font-size: 1.2em;
+                        background: $__text_default_color;
+                        color: $__container_color;
+                        display: flex;
+                        align-items: center;
+                        gap: .5rem;
+                        cursor: pointer;
+                        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                        * {
+                            color: $__container_color;
+                        }
+                        &:hover {
+                            background: $__boys_color_varient;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            flex: 1;
+            h3 {
+                margin-bottom: 1rem;
+                // cursor: pointer;
+                // &:hover {
+                //     color: $__boys_color;
+                // }
+            }
+            .box {
+                display: flex;
+                flex-direction: column;
+                margin-top: 1rem;
+                width: 100%;
+                .card {
+                    img {
+                        width: 30px;
+                        margin-bottom: .5rem;
+                    }
+                    h3 {
+                        margin: .5rem 0;
+                    }
+                    padding: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                }
+            }
+        }
+    }
+}

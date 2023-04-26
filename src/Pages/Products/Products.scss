@@ -1,0 +1,116 @@
+@import "../../App.scss";
+
+.products {
+    display: flex;
+    padding: 0 1rem;
+    width: 100%;
+    max-width: 1420px;
+    margin: auto;
+    gap: 1rem;
+    .left {
+        padding: 1rem 1rem 0 0;
+        flex: 1;
+        max-width: 300px;
+        position: sticky;
+        top: 10.5rem;
+        height: 100%;
+        background: $__container_color;
+        border-radius: 20px;
+        margin-block: 1rem;
+        padding-inline: 1rem;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        .pricelevel {
+            span {
+                width: 2rem;
+            }
+        }
+        .filterItem {
+            margin: 0 0 1rem 0;
+            .inputItem {
+                border-bottom: 1px solid rgb(204, 203, 203);
+                margin: .5rem 0;
+                label {
+                    margin-left: .5rem;
+                }
+            }
+        }
+    }
+    .right {
+        width: 100%;
+        flex: 3;
+        padding-top: 1rem;
+        display: flexbox;
+        gap: 1rem;
+        .cardImg {
+            width: 100%;
+            min-height: 13rem;
+            margin-bottom: 1rem;
+            background: $__girls_color;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-inline: 2rem;
+            overflow: hidden;
+            border-radius: 20px;
+            .left_inner {
+                flex: 2;
+                text-align: center;
+                max-width: 600px;
+
+                h2 {
+                    line-height: 2rem;
+                    margin-bottom: 2rem;
+                    font-family: 'Castoro Titling';
+                }
+                h3 {
+                    background: $__text_color;
+                    color: $__container_color;
+                    padding: .5rem 1rem;
+                    width: fit-content;
+                    text-align: center;
+                    margin: auto;
+                    border-radius: 10px;
+                    
+                }
+            }
+            .image {
+                flex: 1;
+                img {
+                    width: 200px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .products {
+        display: flex;
+        flex-direction: column;
+        .left {
+            display: block;
+            display: flex;
+            width: 100%;
+            max-width: 100%;
+            justify-content: space-between;
+
+        }
+        .right {
+            .cardImg {
+                height: fit-content;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .products{
+        .right {
+            .cardImg {
+                .image {
+                    display: none;
+                }
+            }
+        }
+    }
+}

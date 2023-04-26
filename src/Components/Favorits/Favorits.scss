@@ -1,0 +1,90 @@
+@import "../../App.scss";
+
+.favorits {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background: $__body_color;
+    padding: 1rem;
+    position: fixed;
+    top: 5rem;
+    z-index: 999;
+    min-width: 350px;
+    max-width: 400px;
+    right: 8%;
+    gap: 1rem;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+    max-height: 800px;
+    border-radius: 20px;
+    &::-webkit-scrollbar {
+        display: none;
+      }
+    .titleh2 {
+        text-transform: uppercase;
+        margin-bottom: 2rem;
+        font-size: 1em;
+    }
+    .item {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        background-color: $__container_color;
+        .first_part {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            align-items: center;
+        }
+        h2 {
+            font-size: 1em;
+        }
+        p {
+            color: gray;
+        }
+        .details {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: start;
+            gap: .5rem;
+            height: 100%;
+        }
+        img {
+            width: 4rem;
+            height: 5rem;
+            object-fit: contain;
+        }
+    }
+    .delete {
+        cursor: pointer;
+        * {
+            color: red;
+        }
+    }
+    .total {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+    }
+    button {
+        border: none;
+        background: $__text_default_color;
+        color: $__container_color;
+        padding: .5rem 0;
+        font-size: 1.1em;
+        cursor: pointer;
+        border-radius: 10px;
+        &:hover {
+            background: $__boys_color;
+        }
+    }
+    a {
+        color: red;
+        width:fit-content;
+    }
+}

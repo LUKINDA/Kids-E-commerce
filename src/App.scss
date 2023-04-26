@@ -1,0 +1,66 @@
+
+
+$__boys_color: #0071cc;
+$__girls_color: #ff9999;
+$__boys_color_varient: #005bb5;
+$__girls_color_varient: #e26a89;
+$__container_color: #fff;
+$__body_color: #f3f8fd;
+$__main_color: #ffe5b5;
+$__text_color: #313131;
+$__text_default_color: #000;
+$__card_bg: rgb(218, 219, 219);
+
+* {
+    list-style: none;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Inter', sans-serif; //'Nunito' font rounded
+    text-decoration: none;
+    color: $__text_color;
+    line-height: 1.5rem;
+}
+body {
+    background: $__body_color;
+   // padding: 1rem 8%;
+    display: block;
+    a {
+        padding-block: .5rem;
+        
+    }
+    .title {
+        text-align: center;
+        margin: 2rem 0;
+        h3 {
+            text-transform: uppercase;
+            font-size: 1em;
+        }
+        .subtitle {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1rem;
+            gap: 1rem;
+            hr {
+                width: 20%;
+                height: 3px;
+                background-color: $__text_color;
+                border: none;
+
+            }
+            h2 {
+                text-transform: uppercase;
+                font-weight: bold;
+                font-size: 2em;
+                line-height: normal;
+            }
+            
+        }
+    }
+    .container {
+        width: 100%;
+        padding: 0 4%;
+    }
+    
+}

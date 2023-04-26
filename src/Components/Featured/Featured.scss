@@ -1,0 +1,48 @@
+@import '../../App.scss';
+
+.featuredProducts {
+    padding-inline: 4%;
+    margin-block: 2rem;
+    .top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        max-width: 1050px;
+        margin: auto;
+        padding-block: 1.5rem;
+        flex-wrap: wrap;
+        h2 {
+            flex: 2;
+            text-transform: capitalize;
+            font-size: 1.8em;
+        }
+        p {
+            flex: 3;
+            color: $__text_color;
+            font-size: 1.2em;
+            line-height: normal;
+        }
+    }
+    .bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 100%;
+        max-width: 1200px;
+        margin-inline: auto;
+        gap: 1rem;
+        margin-top: 1rem;
+    }
+}
+
+@media screen and (max-width: 620px) {
+    .featuredProducts {
+        .top {
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+        }
+    }
+}

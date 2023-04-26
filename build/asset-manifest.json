@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4a20cb49.css",
+    "main.js": "/static/js/main.5ab4257b.js",
+    "static/media/child2.png": "/static/media/child2.ae2624a1790a90ecfb48.png",
+    "static/media/logo.png": "/static/media/logo.985195c31b3066d39d06.png",
+    "static/media/shop11.JPG": "/static/media/shop11.620433b77a04721386eb.JPG",
+    "static/media/shop2.JPG": "/static/media/shop2.19dde1e2fc5a01c459c2.JPG",
+    "static/media/child3.png": "/static/media/child3.5eb8088d81ea5ef63169.png",
+    "static/media/child1.png": "/static/media/child1.05d763e177db24bd356a.png",
+    "static/media/shop6.JPG": "/static/media/shop6.18fe72d6ab9a4e8d9e31.JPG",
+    "static/media/shop7.JPG": "/static/media/shop7.ca9fc3e4eb7895063554.JPG",
+    "static/media/shop8.JPG": "/static/media/shop8.9ffa5498aafb775ee506.JPG",
+    "static/media/Boltz-Regular.woff": "/static/media/Boltz-Regular.129dded30226fe20328e.woff",
+    "static/media/shop9.JPG": "/static/media/shop9.dd88fdf93bdf4806d5c0.JPG",
+    "static/media/shop4.JPG": "/static/media/shop4.c58c496f603d368b72be.JPG",
+    "static/media/Creattion.otf": "/static/media/Creattion.fac8f063ee598d49bc31.otf",
+    "static/media/cloud.png": "/static/media/cloud.f764581e7d54da852ce2.png",
+    "static/media/payment.png": "/static/media/payment.c25c303da7570caf63c8.png",
+    "index.html": "/index.html",
+    "main.4a20cb49.css.map": "/static/css/main.4a20cb49.css.map",
+    "main.5ab4257b.js.map": "/static/js/main.5ab4257b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4a20cb49.css",
+    "static/js/main.5ab4257b.js"
+  ]
+}

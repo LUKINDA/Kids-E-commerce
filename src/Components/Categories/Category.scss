@@ -1,0 +1,46 @@
+@import "../../App.scss";
+
+
+.box {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+    max-width: 1050px;
+    margin: auto;
+    flex-wrap: wrap;
+    .card {
+        flex: 1;
+        background: $__container_color;
+        text-align: center;
+        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        min-width: 300px;
+        border-radius: 20px;
+        padding: 1rem;
+        .image {
+            width: 100%;
+            height: 150px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            img {
+                width: 100%;
+                object-fit: cover;
+                height: 100%;
+                transition: transform 0.3s ease;
+                border-radius: 10px;
+            }
+        }
+        h3 {
+            margin-block: 1rem;
+            text-transform: uppercase;
+        }
+        &:hover {
+            .image {
+                img {
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}

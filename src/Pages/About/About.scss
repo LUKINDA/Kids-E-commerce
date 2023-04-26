@@ -1,0 +1,154 @@
+@import "../../App.scss";
+@font-face {
+    font-family: signature;
+    src: url("../../topograpy/Creattion.otf");
+}
+
+.about {
+    width: 100%;
+    section {
+        width: 100%;
+        padding: 2rem 8%;
+    }
+    .top {
+        background: $__girls_color;
+        text-align: center;
+        height: 15rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        * {
+            color: $__container_color;
+        }
+        span {
+            color: rgba(255, 255, 255, 0.46);
+            
+        }
+        h2 {
+            text-transform: uppercase;
+            margin-top: 3rem;
+            font-size: 3em;
+            line-height: normal;
+            
+        }
+        
+    }
+    .story {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 2rem;
+        .image {
+            flex: 1;
+            max-width: 700px;
+            min-width: 350px;
+            img {
+                width: 100%;
+                max-width: inherit;
+                margin: auto;
+                border-radius: 20px;
+            }
+        }
+        .content {
+            padding: 1rem;
+            flex: 1;
+            display: flex;
+            align-items: start;
+            flex-direction: column;
+            justify-content: center;
+            flex-wrap: wrap;
+            min-width: 350px;
+            //width: 100%;
+            //max-width: 700px;
+            margin: auto;
+            h2 {
+                font-size: 2em;
+                
+            }
+            .description {
+                margin-block: 2rem;
+                //font-size: 1.2em;
+                opacity: .8;
+                line-height: 1.5em;
+            }
+            button {
+                padding: .5rem 1rem;
+                border-radius: 10px;
+                border: none;
+                background:$__girls_color_varient;
+                color: $__container_color;
+                font-size: 1.2em;
+                cursor: pointer;
+                &:hover {
+                    background: $__boys_color;
+                }
+            }
+        }
+        .signature {
+            font-family: "signature" ;
+            font-size: 5em;
+            font-weight: lighter;
+            margin-top: 1rem;
+        }
+        #signature {
+            font-size: 5em;
+        }
+    }
+    .choose_us {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+        background: $__girls_color;
+        
+        .card {
+            width: 100%;
+            flex: 1;
+            min-width: 300px;
+            background-color: $__body_color;
+            padding: 1rem;
+            min-height: 20rem;
+            text-align: center;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+            border-radius: 20px;
+            img {
+                border-radius: 50%;
+                //width: 30%;
+                max-width: 7rem;
+                background-color: rgb(91, 91, 91);
+                padding: 1rem;
+            }
+            h3 {
+                margin: 1rem 0;
+                text-transform: capitalize;
+            }
+            p {
+                opacity: .8;
+            }
+            &:hover {
+                box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+                transform: translateY(1.5);
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .about {
+        .story {
+            .image {
+                width: 100%;
+                min-width: 100%;
+                img {
+                    width: 100%;
+                }
+            }
+            #signature {
+                font-size: 3em;
+            }
+        }
+    }
+}

@@ -1,0 +1,12 @@
+@import "../../App.scss";
+
+.list {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    
+}

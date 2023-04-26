@@ -1,0 +1,132 @@
+@import "../../App.scss";
+@font-face {
+    font-family: boltz;
+    src: url('../../topograpy/Boltz-Regular.woff');
+}
+
+.main_container {
+    .swiper {
+        width: 100%;
+        height: 30rem;
+        .swiper-wrapper {
+           // width: 100%;
+            .swiper-slide {
+                display: flex;
+                justify-content: center;
+                gap: 2rem;
+                align-items: center;
+                padding: 2rem;
+                .image {
+                    height: 100%;
+                    display: flex;
+                    img {
+                        margin: auto;
+                       // height: inherit;
+                    }
+                }
+                .card {
+                    flex: 1;
+                    max-width: 600px;
+                }
+                .content {
+                    //text-align: center;
+                    h3 {
+                        font-family: 'Castoro Titling';
+                        font-weight: 400;
+                        font-size: 2em;
+                        line-height: 2rem;
+                        text-transform: capitalize;
+                    }
+                    h2 {
+                        font-size: 3em;
+                        line-height: 1.5em;
+                        margin-block: 2rem;
+                        font-weight: bolder;
+                        font-family: 'Castoro Titling';
+                    }
+                    a {
+                        background-color: $__container_color;
+                        padding: .5rem 1em;
+                        border-radius: 20px;
+                        border: none;
+                        &:hover {
+                            background: $__boys_color_varient;
+                            color: $__container_color;
+
+                        }
+                    }
+                    
+                }
+                .deco {
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        z-index: -1;
+                        filter: brightness(40%);
+                    }
+                .deco2 {
+                    right: 0;
+                    position: absolute;
+                    top: 0;
+                    z-index: -1;
+                    filter: brightness(40%);
+                }
+                &:first-child {
+                    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url("../../Assets/shop6.JPG");
+                    h3, h2 {
+                        color: $__container_color;
+                    }
+                    .content {
+                        text-align: end;
+                    }
+                }
+                &:nth-child(2) {
+                    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url("../../Assets/shop4.JPG");
+                    flex-direction: row-reverse;
+                    a {
+                        &:hover {
+                            background: $__girls_color_varient;
+                        }
+                    }
+                    h3, h2 {
+                        color: $__container_color;
+                    }
+                }
+                &:last-child {
+                    background: linear-gradient(rgba(0, 0, 0, 0.60), rgba(0, 0, 0, 0.60)),url("../../Assets/shop2.JPG");
+                    h3, h2 {
+                        color: $__container_color;
+                    }
+                    a {
+                        &:hover {
+                            background: $__girls_color_varient;
+                        }
+                    }
+                    .content {
+                        text-align: end;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main_container {
+        .swiper {
+            //min-height: 30rem !important;
+            height: fit-content;
+            .swiper-wrapper {
+                .swiper-slide {
+                    display: flex;
+                    flex-direction: column-reverse !important;
+                    gap: 1rem;
+                    padding: 1rem ;
+                    img {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
