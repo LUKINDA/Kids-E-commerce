@@ -103,7 +103,7 @@ const Contacts = ({item}) => {
                 <h3>Nos contactes</h3>
                 <hr />
                 <div className="box">
-                    {loading ? "loading" : data.map((item) => (
+                    {loading ? "loading" : data && data.map((item) => (
                             <div className="card">
                                 <img src={process.env.REACT_APP_UPLOAD_URL + item?.attributes.icon?.data?.attributes.url} alt="" />
                                 <span>{item?.attributes?.title}</span>

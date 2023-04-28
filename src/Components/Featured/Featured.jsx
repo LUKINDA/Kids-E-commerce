@@ -37,7 +37,7 @@ const Featured = ({ type }) => {
         </p>
       </div>
       <div className="bottom">
-        {loading ? "loading" : data.map((item) => (
+        {loading ? "loading" : data && data.map((item) => (
           <Card item={item} key={item.id} />
         ))}
       </div>

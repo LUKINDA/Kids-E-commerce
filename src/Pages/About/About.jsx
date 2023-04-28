@@ -35,7 +35,7 @@ const About = ({item}) => {
         </section>
         
         <section className="choose_us">
-        {loading ? "loading" : data.map((item) => (
+        {loading ? "loading" : data && data.map((item) => (
             <div className="card">
                 <img src={process.env.REACT_APP_UPLOAD_URL + item?.attributes.img?.data?.attributes.url} alt="" />
                 <h3>{item?.attributes?.title}</h3>

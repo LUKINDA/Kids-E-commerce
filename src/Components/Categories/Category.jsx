@@ -20,7 +20,7 @@ const Category = ({item}) => {
             </div>
         </div>
         <div className="box">
-          {loading ? "loading" : data.map((item) => (
+          {loading ? "loading" : data && data.map((item) => (
             <>
             <Link className="card">
             <div >

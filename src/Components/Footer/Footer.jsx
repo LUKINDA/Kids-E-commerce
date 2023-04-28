@@ -37,7 +37,7 @@ const Footer = ({item}) => {
         </div>
         <div className="items">
           <h3>Contactez-nous</h3>
-          {loading ? "loading" : data.map((item) => (
+          {loading ? "loading" : data && data.map((item) => (
                             <div className="card">
                                 <p>{item?.attributes?.valeur}</p>
                             </div>

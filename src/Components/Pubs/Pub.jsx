@@ -10,7 +10,7 @@ const Pub = () => {
   return (
     <div className='publicites'>
         <div className="container2">
-            {loading ? "loading" : data.map((item) => (
+            {loading ? "loading" : data && data.map((item) => (
                     <div className="cardPub">
                         <img src={process.env.REACT_APP_UPLOAD_URL + item?.attributes.img?.data?.attributes.url} alt="" />
                         <div className="desc">
