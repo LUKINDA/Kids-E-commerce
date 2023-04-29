@@ -34,15 +34,15 @@ const Product = () => {
       {loading ? "loading" : (
         <>
           <div className="left">
-        <div className="images">
-          <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img?.data?.attributes?.url} alt="" 
-                onClick={(e)=>setSelectedImg("img")}/>
-          <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img2?.data?.attributes?.url} alt="" 
-                onClick={(e)=>setSelectedImg("img2")} />
-        </div>
-        <div className="mainImg">
-          <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.[selectedImg]?.data?.attributes?.url} alt="" />
-        </div>
+            <div className="images">
+              <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img?.data?.attributes?.url} alt="" 
+                    onClick={(e)=>setSelectedImg("img")}/>
+              <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.img2?.data?.attributes?.url} alt="" 
+                    onClick={(e)=>setSelectedImg("img2")} />
+            </div>
+            <div className="mainImg">
+              <img src={process.env.REACT_APP_UPLOAD_URL + data?.attributes?.[selectedImg]?.data?.attributes?.url} alt="" />
+            </div>
       </div>
       <div className="right">
         <h2>{data?.attributes?.title}</h2>
