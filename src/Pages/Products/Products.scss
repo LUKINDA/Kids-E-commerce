@@ -15,7 +15,7 @@
         top: 10.5rem;
         height: 100%;
         background: $__container_color;
-        border-radius: 20px;
+        //border-radius: 20px;
         margin-block: 1rem;
         padding-inline: 1rem;
         box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -51,7 +51,7 @@
             align-items: center;
             padding-inline: 2rem;
             overflow: hidden;
-            border-radius: 20px;
+            //border-radius: 20px;
             .left_inner {
                 flex: 2;
                 text-align: center;
@@ -69,7 +69,7 @@
                     width: fit-content;
                     text-align: center;
                     margin: auto;
-                    border-radius: 10px;
+                    //border-radius: 10px;
                     
                 }
             }

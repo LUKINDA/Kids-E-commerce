@@ -65,7 +65,7 @@
                 padding: 1rem;
                 box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
                 height: 100%;
-                border-radius: 20px;
+                //border-radius: 20px;
                 .input_field {
                     display: flex;
                     flex-direction: column;
@@ -76,7 +76,7 @@
                         border: none;
                         background: rgb(231, 231, 231);
                         resize: none;
-                        border-radius: 10px;
+                        //border-radius: 10px;
                         
 
                     }
@@ -91,7 +91,7 @@
                         margin: 0 0 0 auto;
                         padding: .5rem 1rem;
                         border: none;
-                        border-radius: 10px;
+                        //border-radius: 10px;
                         font-size: 1.2em;
                         background: $__text_default_color;
                         color: $__container_color;

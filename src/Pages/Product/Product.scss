@@ -16,14 +16,14 @@
             background: $__card_bg;
             height: fit-content;
             padding: 1rem;
-            border-radius: 20px;
+            //border-radius: 20px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
             img {
                 width: 100%;
                 height: 150px;
                 object-fit: cover;
                 cursor: pointer;
-                border-radius: 10px;
+                //border-radius: 10px;
             }
         }
         .mainImg {
@@ -31,7 +31,7 @@
             background: $__card_bg;
             max-height: 500px;
             box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
-            border-radius: 20px;
+            //border-radius: 20px;
             img {
                 width: 100%;
                 max-width: 600px;
@@ -64,7 +64,7 @@
                 background: red;
                 color: $__container_color;
                 padding: .5rem 1rem;
-                border-radius: 10px;
+                //border-radius: 10px;
                 
             }
         }
@@ -83,7 +83,7 @@
                 height: 3rem;
                 border: none;
                 background: $__card_bg;
-                border-radius: 10px;
+                //border-radius: 10px;
                 cursor: pointer;
                 &:hover {
                     background: gray;
@@ -96,7 +96,7 @@
             button {
                 display: flex;
                 align-items: center;
-                border-radius: 10px;
+                //border-radius: 10px;
                 gap: .5rem;
                 background: $__text_default_color;
                 color: $__container_color;
